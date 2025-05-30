@@ -10,7 +10,7 @@ export const getAllContacts = async () => {
 
     return existingContacts;
   } catch (error) {
-    console.error('Error occurs:', error);
+    console.error('An error occurred:', error);
     return [];
   }
 };

@@ -18,7 +18,7 @@ export const addOneContact = async () => {
       `new contact added: ${newContact.name}. Now there are ${updatedContacts.length} contacts`,
     );
   } catch (error) {
-    console.error('Error occurs:', error);
+    console.error('An error occurred:', error);
   }
 };
 
