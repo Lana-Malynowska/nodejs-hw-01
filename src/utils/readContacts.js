@@ -7,7 +7,7 @@ export const readContacts = async () => {
     console.log(data);
     return JSON.parse(data);
   } catch (error) {
-    console.log(error);
+    console.error(error);
     if (error.code === 'ENOENT') {
       return [];
     } else {

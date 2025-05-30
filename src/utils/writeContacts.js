@@ -7,6 +7,7 @@ export const writeContacts = async (updatedContacts) => {
     await fs.writeFile(PATH_DB, jsonData, 'utf-8');
     console.log('File is successfully updated');
   } catch (error) {
-    console.log(error);
+    console.error('error occurs:', error);
+    throw error;
   }
 };
